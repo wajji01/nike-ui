@@ -1,6 +1,5 @@
 "use client";
 import { StaticImageData } from "next/image";
-import { Footer } from "../components/footer";
 import Navber from "../components/navbar";
 import image1 from "@/app/assists/Rectangle.png";
 import Image from "next/image";
@@ -8,7 +7,7 @@ import { IoFilter } from "react-icons/io5";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { useState } from "react";
 
-export default function allproduct() {
+export default function Allproduct() {
 
     const [isVisible, setIsVisible] = useState(false);
     const [isVisible1, setIsVisible1] = useState(false);
@@ -307,7 +306,7 @@ export default function allproduct() {
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 md:px-10 gap-6 mt-5">
             {BestOfAirMax.map((card) => (
               <div className=" rounded-lg  overflow-hidden bg-white">
-                <div className="">
+                <div key={card.id}>
                   <Image
                     src={card.image}
                     alt={card.title}

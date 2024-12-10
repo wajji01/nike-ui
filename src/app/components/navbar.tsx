@@ -5,7 +5,7 @@ import logo from "@/app/assists/Frame.png";
 import logo1 from "@/app/assists/Frame (1).png";
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { IoBagOutline, IoClose } from "react-icons/io5";
+import { IoBagOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
 
 

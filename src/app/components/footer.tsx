@@ -1,6 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
-
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";

@@ -132,7 +132,7 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 px-10 gap-6 mt-5">
           {BestOfAirMax.map((card) => (
             <div className=" rounded-lg  overflow-hidden bg-white">
-              <div className="">
+              <div key={card.id}>
                 <Image
                   src={card.image}
                   alt={card.title}
@@ -184,7 +184,7 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 px-10 gap-6 mt-5">
               {mens.map((card) => (
                 <div className=" rounded-lg  overflow-hidden bg-white">
-                  <div className="">
+                  <div key={card.id}>
                     <Image
                       src={card.image}
                       alt={card.title}
@@ -212,7 +212,7 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 px-10 gap-6 mt-5">
               {womens.map((card) => (
                 <div className=" rounded-lg  overflow-hidden bg-white">
-                  <div className="">
+                  <div key={card.id}>
                     <Image
                       src={card.image}
                       alt={card.title}
