@@ -24,7 +24,7 @@ export default function login () {
                         Forgotten your password?
                         </div>
                     </div>
-                    <p className="text-gray-500 text-sm">By logging in, you agree to Nike's Privacy Policy and Terms of Use.</p>
+                    <p className="text-gray-500 text-sm">By logging in, you agree to Nikes Privacy Policy and Terms of Use.</p>
                     <button className="bg-black text-white  py-2 rounded-lg text-center  hover:bg-gray-900 duration-500 w-full">  Sign In</button>
                     <p className=" text-gray-500">Not a member? <Link href="/joinus" className=" text-black underline">Join Us.</Link></p>
                 </div>

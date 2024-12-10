@@ -17,7 +17,7 @@ import essent1 from "@/app/assists/essent1.png";
 import essent2 from "@/app/assists/essent2.png";
 
 type Card = {
-  id: number;
+  id?: number;
   image: StaticImageData;
   name: string;
   price: number;
@@ -32,7 +32,7 @@ export default function Home() {
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
-      title: "Women's Shoes",
+      title: "Womens Shoes",
       tag: "BestOfAirMax",
     },
     {
@@ -130,9 +130,9 @@ export default function Home() {
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 px-10 gap-6 mt-5">
-          {BestOfAirMax.map((card) => (
+          {BestOfAirMax.map((card, index) => (
             <div className=" rounded-lg  overflow-hidden bg-white">
-              <div key={card.id}>
+              <div key={index}>
                 <Image
                   src={card.image}
                   alt={card.title}
@@ -177,14 +177,14 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 px-10 gap-6 mt-5">
           <div>
             <div className=" flex gap-x-5 justify-end px-10">
-              <p>Shop Men's</p>
+              <p>Shop Mens</p>
               <FaArrowCircleLeft className=" text-gray-600 text-4xl" />
               <FaArrowCircleRight className=" text-4xl" />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 px-10 gap-6 mt-5">
-              {mens.map((card) => (
+              {mens.map((card, index) => (
                 <div className=" rounded-lg  overflow-hidden bg-white">
-                  <div key={card.id}>
+                  <div key={index}>
                     <Image
                       src={card.image}
                       alt={card.title}
@@ -205,14 +205,14 @@ export default function Home() {
           </div>
           <div>
             <div className=" flex gap-x-5 justify-end px-10">
-              <p>Shop Women's</p>
+              <p>Shop Womens</p>
               <FaArrowCircleLeft className=" text-gray-600 text-4xl" />
               <FaArrowCircleRight className=" text-4xl" />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 px-10 gap-6 mt-5">
-              {womens.map((card) => (
+              {womens.map((card, index) => (
                 <div className=" rounded-lg  overflow-hidden bg-white">
-                  <div key={card.id}>
+                  <div key={index}>
                     <Image
                       src={card.image}
                       alt={card.title}
@@ -236,7 +236,7 @@ export default function Home() {
 
       {/* Dont Miss */}
       <section className=" my-20 px-10">
-        <h1 className=" py-5 text-2xl font-bold">Don't Miss</h1>
+        <h1 className=" py-5 text-2xl font-bold">Dont Miss</h1>
         <Image src={bannerImage2} alt="banner" className="w-full " />
         <div className=" text-center space-y-10 py-10">
           <h1 className=" text-5xl lg:text-7xl font-bold">FLIGHT ESSENTIALS</h1>
@@ -265,7 +265,7 @@ export default function Home() {
             />
             {/* Button */}
             <button className="duration-500 text-2xl  absolute bottom-24 left-14 px-8 py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-400">
-              Men's
+              Mens
             </button>
           </div>
           <div className="relative ">
@@ -279,7 +279,7 @@ export default function Home() {
             />
             {/* Button */}
             <button className="duration-500 text-2xl  absolute bottom-24 left-14 px-8 py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-400">
-              Women's
+              Womens
             </button>
           </div>
           <div className="relative ">
@@ -336,9 +336,9 @@ export default function Home() {
           <div className=" col-span-1 ">
           <h3 className=" text-lg mb-10 font-bold hover:text-gray-400 cursor-pointer">Kids</h3>
               <h3 className=" text-lg mb-4 text-gray-500 hover:text-gray-400 cursor-pointer">Infant & Toddler Shoes</h3>
-              <h3 className=" text-lg mb-4 text-gray-500 hover:text-gray-400 cursor-pointer">Kids' Shoes</h3>
-              <h3 className=" text-lg mb-4 text-gray-500 hover:text-gray-400 cursor-pointer">Kids' Jordan Shoes</h3>
-              <h3 className=" text-lg mb-4 text-gray-500 hover:text-gray-400 cursor-pointer">Kids' Basketball Shoes</h3>
+              <h3 className=" text-lg mb-4 text-gray-500 hover:text-gray-400 cursor-pointer">Kids Shoes</h3>
+              <h3 className=" text-lg mb-4 text-gray-500 hover:text-gray-400 cursor-pointer">Kids Jordan Shoes</h3>
+              <h3 className=" text-lg mb-4 text-gray-500 hover:text-gray-400 cursor-pointer">Kids Basketball Shoes</h3>
           </div>
           </div>
       </section>

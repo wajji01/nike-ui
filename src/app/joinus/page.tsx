@@ -29,7 +29,7 @@ export default function login () {
                         <input type="checkbox" />
                         <label className="  text-sm text-gray-500"> Sign up for emails to get updates from Nike on products, offers and your Member benefits</label>
                         </div>
-                    <p className="text-gray-500 text-sm">By creating an account, you agree to Nike's <Link href="#" className=" underline">Privacy Policy</Link>  and <Link href="#" className=" underline"> Terms of Use.</Link></p>
+                    <p className="text-gray-500 text-sm">By creating an account, you agree to Nikes <Link href="#" className=" underline">Privacy Policy</Link>  and <Link href="#" className=" underline"> Terms of Use.</Link></p>
                     <button className="bg-black text-white  py-2 rounded-lg text-center  hover:bg-gray-900 duration-500 w-full">  Sign In</button>
                     <p className=" text-gray-500">Already a member? <Link href="/login" className=" text-black underline">Sign In.</Link></p>
                 </div>

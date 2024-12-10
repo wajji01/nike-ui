@@ -26,7 +26,7 @@ export default function Allproduct() {
 
 
   type Card = {
-    id: number;
+    id?: number;
     image: StaticImageData;
     name: string;
     price: number;
@@ -41,7 +41,7 @@ export default function Allproduct() {
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
-      title: "Women's Shoes",
+      title: "Womens Shoes",
       tag: "BestOfAirMax",
     },
     {
@@ -49,7 +49,7 @@ export default function Allproduct() {
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
-      title: "Women's Shoes",
+      title: "Womens Shoes",
       tag: "BestOfAirMax",
     },
     {
@@ -57,7 +57,7 @@ export default function Allproduct() {
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
-      title: "Women's Shoes",
+      title: "Womens Shoes",
       tag: "BestOfAirMax",
     },
     {
@@ -65,7 +65,7 @@ export default function Allproduct() {
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
-      title: "Women's Shoes",
+      title: "Womens Shoes",
       tag: "BestOfAirMax",
     },
     {
@@ -73,7 +73,7 @@ export default function Allproduct() {
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
-      title: "Women's Shoes",
+      title: "Womens Shoes",
       tag: "BestOfAirMax",
     },
     {
@@ -81,7 +81,7 @@ export default function Allproduct() {
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
-      title: "Women's Shoes",
+      title: "Womens Shoes",
       tag: "BestOfAirMax",
     },
     {
@@ -89,7 +89,7 @@ export default function Allproduct() {
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
-      title: "Women's Shoes",
+      title: "Womens Shoes",
       tag: "BestOfAirMax",
     },
     {
@@ -97,7 +97,7 @@ export default function Allproduct() {
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
-      title: "Women's Shoes",
+      title: "Womens Shoes",
       tag: "BestOfAirMax",
     },
     {
@@ -105,7 +105,7 @@ export default function Allproduct() {
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
-      title: "Women's Shoes",
+      title: "Womens Shoes",
       tag: "BestOfAirMax",
     },
     {
@@ -113,7 +113,7 @@ export default function Allproduct() {
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
-      title: "Women's Shoes",
+      title: "Womens Shoes",
       tag: "BestOfAirMax",
     },
     {
@@ -121,7 +121,7 @@ export default function Allproduct() {
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
-      title: "Women's Shoes",
+      title: "Womens Shoes",
       tag: "BestOfAirMax",
     },
     {
@@ -129,7 +129,7 @@ export default function Allproduct() {
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
-      title: "Women's Shoes",
+      title: "Womens Shoes",
       tag: "BestOfAirMax",
     },
     {
@@ -137,7 +137,7 @@ export default function Allproduct() {
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
-      title: "Women's Shoes",
+      title: "Womens Shoes",
       tag: "BestOfAirMax",
     },
   ];
@@ -304,9 +304,9 @@ export default function Allproduct() {
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 md:px-10 gap-6 mt-5">
-            {BestOfAirMax.map((card) => (
+            {BestOfAirMax.map((card, index) => (
               <div className=" rounded-lg  overflow-hidden bg-white">
-                <div key={card.id}>
+                <div key={index}>
                   <Image
                     src={card.image}
                     alt={card.title}
