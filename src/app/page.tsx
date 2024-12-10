@@ -130,8 +130,8 @@ export default function Home() {
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 px-10 gap-6 mt-5">
-          {BestOfAirMax.map((card) => (
-            <div key={card.id} className=" rounded-lg  overflow-hidden bg-white">
+          {BestOfAirMax.map((card, index) => (
+            <div key={index} className=" rounded-lg  overflow-hidden bg-white">
               <div >
                 <Image
                   src={card.image}
