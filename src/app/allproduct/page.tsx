@@ -26,7 +26,7 @@ export default function Allproduct() {
 
 
   type Card = {
-    id?: number;
+    id: number;
     image: StaticImageData;
     name: string;
     price: number;
@@ -45,7 +45,7 @@ export default function Allproduct() {
       tag: "BestOfAirMax",
     },
     {
-      id: 1,
+      id: 2,
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
@@ -53,7 +53,7 @@ export default function Allproduct() {
       tag: "BestOfAirMax",
     },
     {
-      id: 1,
+      id: 3,
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
@@ -61,7 +61,7 @@ export default function Allproduct() {
       tag: "BestOfAirMax",
     },
     {
-      id: 1,
+      id: 4,
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
@@ -69,7 +69,7 @@ export default function Allproduct() {
       tag: "BestOfAirMax",
     },
     {
-      id: 1,
+      id: 5,
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
@@ -77,7 +77,7 @@ export default function Allproduct() {
       tag: "BestOfAirMax",
     },
     {
-      id: 1,
+      id: 6,
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
@@ -85,7 +85,7 @@ export default function Allproduct() {
       tag: "BestOfAirMax",
     },
     {
-      id: 1,
+      id: 7,
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
@@ -93,7 +93,7 @@ export default function Allproduct() {
       tag: "BestOfAirMax",
     },
     {
-      id: 1,
+      id: 8,
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
@@ -101,7 +101,7 @@ export default function Allproduct() {
       tag: "BestOfAirMax",
     },
     {
-      id: 1,
+      id: 9,
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
@@ -109,7 +109,7 @@ export default function Allproduct() {
       tag: "BestOfAirMax",
     },
     {
-      id: 1,
+      id: 10,
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
@@ -117,7 +117,7 @@ export default function Allproduct() {
       tag: "BestOfAirMax",
     },
     {
-      id: 1,
+      id: 11,
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
@@ -125,7 +125,7 @@ export default function Allproduct() {
       tag: "BestOfAirMax",
     },
     {
-      id: 1,
+      id: 12,
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
@@ -133,7 +133,7 @@ export default function Allproduct() {
       tag: "BestOfAirMax",
     },
     {
-      id: 1,
+      id: 13,
       image: image1,
       name: "Nike Air Max Pulse",
       price: 13.995,
@@ -304,9 +304,9 @@ export default function Allproduct() {
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 md:px-10 gap-6 mt-5">
-            {BestOfAirMax.map((card, index) => (
-              <div className=" rounded-lg  overflow-hidden bg-white">
-                <div key={index}>
+            {BestOfAirMax.map((card) => (
+              <div key={card.id} className=" rounded-lg  overflow-hidden bg-white">
+                <div >
                   <Image
                     src={card.image}
                     alt={card.title}

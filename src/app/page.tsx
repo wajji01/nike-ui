@@ -17,7 +17,7 @@ import essent1 from "@/app/assists/essent1.png";
 import essent2 from "@/app/assists/essent2.png";
 
 type Card = {
-  id?: number;
+  id: number;
   image: StaticImageData;
   name: string;
   price: number;
@@ -52,7 +52,7 @@ export default function Home() {
       tag: "BestOfAirMax",
     },
     {
-      id: 3,
+      id: 4,
       image: men,
       name: "Nike Air Max Pulse",
       price: 100,
@@ -60,7 +60,7 @@ export default function Home() {
       tag: "mens",
     },
     {
-      id: 3,
+      id: 5,
       image: men1,
       name: "Nike Air Max Pulse",
       price: 100,
@@ -68,7 +68,7 @@ export default function Home() {
       tag: "mens",
     },
     {
-      id: 3,
+      id: 6,
       image: women,
       name: "Nike Air Max Pulse",
       price: 100,
@@ -76,7 +76,7 @@ export default function Home() {
       tag: "womens",
     },
     {
-      id: 3,
+      id: 7,
       image: women1,
       name: "Nike Air Max Pulse",
       price: 100,
@@ -130,9 +130,9 @@ export default function Home() {
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 px-10 gap-6 mt-5">
-          {BestOfAirMax.map((card, index) => (
-            <div className=" rounded-lg  overflow-hidden bg-white">
-              <div key={index}>
+          {BestOfAirMax.map((card) => (
+            <div key={card.id} className=" rounded-lg  overflow-hidden bg-white">
+              <div >
                 <Image
                   src={card.image}
                   alt={card.title}
@@ -182,9 +182,9 @@ export default function Home() {
               <FaArrowCircleRight className=" text-4xl" />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 px-10 gap-6 mt-5">
-              {mens.map((card, index) => (
-                <div className=" rounded-lg  overflow-hidden bg-white">
-                  <div key={index}>
+              {mens.map((card) => (
+                <div key={card.id} className=" rounded-lg  overflow-hidden bg-white">
+                  <div >
                     <Image
                       src={card.image}
                       alt={card.title}
@@ -210,9 +210,9 @@ export default function Home() {
               <FaArrowCircleRight className=" text-4xl" />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 px-10 gap-6 mt-5">
-              {womens.map((card, index) => (
-                <div className=" rounded-lg  overflow-hidden bg-white">
-                  <div key={index}>
+              {womens.map((card) => (
+                <div key={card.id} className=" rounded-lg  overflow-hidden bg-white">
+                  <div >
                     <Image
                       src={card.image}
                       alt={card.title}
