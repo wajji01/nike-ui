@@ -171,7 +171,7 @@ export default function contactus() {
             <div className="pl-10 grid gap-2">
               <p>Visa, Mastercard, Diners Club, Discover, American Express, Visa Electron, Maestro</p>
               <p>
-                If you enter your PAN information at checkout, you'll be able to pay
+                If you enter your PAN information at checkout, youll be able to pay
                 for your order with PayTM or a local credit or debit card.
               </p>
               <p>Apple Pay</p>
@@ -180,7 +180,7 @@ export default function contactus() {
               <p>
                 <span className="font-semibold">Nike Member</span>
                 can store multiple debit or credit cards in their profile for
-                faster checkout. If you're not already a Member,
+                faster checkout. If youre not already a Member,
                 <span className="underline cursor-pointer px-2">Join us</span>
                 today.
               </p>
@@ -204,17 +204,17 @@ export default function contactus() {
             </p>
 
             <p className="font-bold">Can I pay for my order with multiple methods?</p>
-            <p>No, payment for Nike orders can't be split between multiple payment methods.</p>
+            <p>No, payment for Nike orders cant be split between multiple payment methods.</p>
 
             <p className="font-bold">What payment method is accepted for SNKRS orders?</p>
             <p>You can use any accepted credit card to pay for your SNKRS order.</p>
 
-            <p className="font-bold">Why don't I see Apple Pay as an option?</p>
+            <p className="font-bold">Why dont I see Apple Pay as an option?</p>
             <p>
-              To see Apple Pay as an option in the Nike App or on Nike.com, you'll
+              To see Apple Pay as an option in the Nike App or on Nike.com, youll
               need to use a compatible Apple device running the latest OS, be
               signed in to your iCloud account, and have a supported card in your
-              Wallet. Additionally, you'll need to use Safari to use Apple Pay on
+              Wallet. Additionally, youll need to use Safari to use Apple Pay on
               Nike.com.
             </p>
 
@@ -253,7 +253,7 @@ export default function contactus() {
 
             <div className=" justify-center items-center space-x-5">
               <CgMail className="text-6xl md:text-8xl m-auto items-center mb-4" />
-              <p className="text-lg">We'll reply within five business days</p>
+              <p className="text-lg">Well reply within five business days</p>
             </div>
 
             <div className=" justify-center items-center space-x-5">
